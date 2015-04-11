@@ -1,0 +1,8 @@
+  {% if page.permalink == "filmography/" %}
+  {% else %}
+  <section class="filmography-minimized">
+    <div class="button">
+      <a class="work-link{% if page.permalink == "filmography/" %} active{% endif %}" href="{{site.baseurl}}/filmography">Filmography</a>
+    </div>
+  </section>
+  {% endif %}

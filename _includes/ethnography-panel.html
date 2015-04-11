@@ -1,0 +1,8 @@
+  {% if page.permalink == "ethnography/" %}
+  {% else %}
+  <section class="ethnography-minimized">
+    <div class="button">
+      <a class="work-link{% if page.permalink == "ethnography/" %} active{% endif %}" href="{{site.baseurl}}/ethnography">Ethnography</a>
+    </div>
+  </section>
+  {% endif %}

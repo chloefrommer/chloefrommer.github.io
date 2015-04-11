@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Benjamin D. Kinzer -- Designer & Development -- @benjaminkinzer
+
+# THANKS
+
+    Chloé Frommer
+    Lucien Milla Frommer-Kinzer
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    jQuery, Modernizr, Normalize.css
+    SASS, Bourbon, Jeet
+    Jekyll, Prose
+    GitHub, Photoshop, Illustrator, After Effects

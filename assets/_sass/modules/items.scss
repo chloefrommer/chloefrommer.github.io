@@ -1,0 +1,17 @@
+.item {
+  margin-bottom:1em;
+}
+.date-header {
+  padding-top:0.5em;
+}
+.date {
+  font-family:$secondary-font-family;
+}
+.tag {
+  @extend .date;
+  font-size:$font-small;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  border:2px solid;
+  padding:1px 5px;
+}

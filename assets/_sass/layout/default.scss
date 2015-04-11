@@ -1,0 +1,52 @@
+//@include edit();
+body {
+  background-color:$grey;
+}
+.container {
+  @include uncenter();
+  height:100%;
+}
+.masthead, .ethnography-home { 
+  text-align:center;
+}
+.masthead {
+  position:fixed;
+  z-index:1000;
+  @include span(1/1);
+  margin-top:3em;
+  .navigation {
+    margin-top:1em;
+  }
+  @include max-screen(nth($res-collection, 3)*1px) {
+    position:static;
+    z-index:initial;
+  }
+}
+.page {
+  @include span(10/12);
+}
+.work {
+  @include span(11/12);
+}
+.page, .work {
+  margin-top:5em;
+}
+.filmography, .ethnography {
+  &-home {
+    height:100%;
+    @include span(1/2);
+    @include max-screen(nth($res-collection, 3)*1px) {
+      @include span(1/1);
+    }
+  }
+  &-minimized {
+    height:100%;
+    @include span(1/12);
+  }
+}
+footer {
+  position:fixed;
+  z-index:1000;
+  bottom:0;
+  right:0;
+}
