@@ -1,0 +1,44 @@
+.masthead, .filmography-home, .ethnography-home { 
+  text-align:center;
+}
+.navigation-panel {
+  margin-top:75%;
+}
+.navigation-link {
+  font-size:$font-large;
+  color:$peach;
+  text-decoration:none;
+  border:5px solid;
+  padding:3px 6px 6px 6px;
+}
+.navigation-quote {
+  padding:2px 2px;
+}
+.ethnography {
+  &-home {
+    @include background-image('turtles.png', no-repeat, center, center);
+    background-color:#eee;
+  }
+  &-minimized {
+    .button { 
+      position:relative;
+      top:50%;
+      @include transform(rotate(90deg));
+    }
+    background-color:#eee;
+  }
+}
+.filmography {
+  &-home {
+    @include background-image('ringmaster.png', no-repeat, center, center);
+    background-color:white;
+  }
+  &-minimized {
+    background-color:white;
+    .button { 
+      position:relative;
+      top:50%;
+      @include transform(rotate(90deg));
+    }
+  }
+}
