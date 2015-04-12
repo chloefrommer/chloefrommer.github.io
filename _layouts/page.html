@@ -5,6 +5,12 @@ layout: default
 <section class="container">
   <section class="page">
     <div class="content">
+      <div class="img-banner">
+        {% if page.banner %}
+          <img src="{{site.baseurl}}/{{page.banner}}">
+        {% else %}
+        {% endif %}
+      </div>
       {{content}}
     </div>
   </section>
