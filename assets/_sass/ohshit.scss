@@ -1,6 +1,1 @@
 .outer-container {height:100%;}
-.navigation-img {
-  @include max-screen(nth($res-collection, 3)*1px) {
-    margin-top:1em;
-  }
-}
