@@ -1,10 +1,10 @@
 //@include edit();
 .container {
   @include uncenter();
-  height:100%;
+  height:100%; 
 }
 .masthead {
-  position:fixed;
+  position:absolute;
   z-index:1000;
   @include span(1/1);
   .navigation {
@@ -70,18 +70,32 @@
     }
   }
   &-minimized {
+    position:fixed;
+    z-index:900;
     height:100%;
-    @include span(1/12);
+    width:5em;
+    @include max-screen(nth($res-collection, 3)*1px) {
+      display:none;
+    }
   }
 }
-.page {
-  @include span(10/12);
+.filmography {
+  &-minimized {
+    top:0;
+    left:0;
+  }
 }
-.work {
-  @include span(11/12);
+.ethnography {
+  &-minimized {
+    top:0;
+    right:0;
+  }
 }
 .page, .work {
-  margin-top:7em;
+  padding:10em 7em 0 7em;
+  @include max-screen(nth($res-collection, 3)*1px) {
+    padding:10em 0 10em 0;
+  }
 }
 footer {
   position:fixed;

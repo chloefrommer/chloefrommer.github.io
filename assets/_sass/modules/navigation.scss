@@ -1,4 +1,7 @@
 .masthead {
+  a {
+    border-bottom:0;
+  }
   @include max-screen(nth($res-collection, 3)*1px) {
     background-color:white;
     .logo { margin:0 10px 1em 10px; }
@@ -20,12 +23,12 @@
     background-color:$light-grey;
   }
   &-minimized {
+    background-color:$light-grey;
     .button { 
       position:relative;
       top:50%;
       @include transform(rotate(90deg));
     }
-    background-color:$light-grey;
   }
 }
 .filmography {
@@ -33,7 +36,7 @@
     background-color:white;
   }
   &-minimized {
-    background-color:white;
+    background-color:$light-grey;
     .button { 
       position:relative;
       top:50%;

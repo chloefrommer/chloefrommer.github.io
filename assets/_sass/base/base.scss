@@ -1,12 +1,10 @@
 html, body {
   height:100%;
 }
-body {
-  background-color:$grey;
-}
 a {
   color:$dark-grey;
   text-decoration:none;
+  border-bottom:1px solid $grey;
 }  
 a.active {
   color:$aqua;
