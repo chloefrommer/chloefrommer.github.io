@@ -1,23 +1,23 @@
+.masthead {
+  @include max-screen(nth($res-collection, 3)*1px) {
+    background-color:white;
+    .logo { margin:0 10px 1em 10px; }
+  } 
+}
 .masthead, .filmography-home, .ethnography-home { 
   text-align:center;
 }
 .navigation-panel {
-  margin-top:75%;
-}
-.navigation-link {
-  font-size:$font-large;
-  color:$peach;
-  text-decoration:none;
-  border:5px solid;
-  padding:3px 6px 6px 6px;
-}
-.navigation-quote {
-  padding:2px 2px;
+  p {
+    line-height:$medium-spacing;
+  }
+  .author {
+    margin-bottom:2em;
+  }
 }
 .ethnography {
   &-home {
-    @include background-image('turtles.png', no-repeat, center, center);
-    background-color:#eee;
+    background-color:$light-grey;
   }
   &-minimized {
     .button { 
@@ -25,12 +25,11 @@
       top:50%;
       @include transform(rotate(90deg));
     }
-    background-color:#eee;
+    background-color:$light-grey;
   }
 }
 .filmography {
   &-home {
-    @include background-image('ringmaster.png', no-repeat, center, center);
     background-color:white;
   }
   &-minimized {

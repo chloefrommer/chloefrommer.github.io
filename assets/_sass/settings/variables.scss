@@ -8,6 +8,7 @@ $tertiary:red;
 
 $dark-grey:rgb(51,51,51);
 $grey:rgb(102,102,102);
+$light-grey:#eeeeee;
 $magenta:rgb(242,36,89);
 $lime:rgb(190,239,0);
 $peach:rgb(242,174,78);
@@ -35,8 +36,11 @@ $base-font-color:black;
 $heading-font-color:black;
 
 // SPACING
-$base-spacing:2.5em;
-$small-spacing:$base-spacing/2;
+$base-spacing:2.7em;
+$medium-spacing:$base-spacing/2;
+$small-spacing:$base-spacing/4;
+$smallest-spacing:$base-spacing/6;
+
 
 // MARGINS
 $base-margin:2.5em;

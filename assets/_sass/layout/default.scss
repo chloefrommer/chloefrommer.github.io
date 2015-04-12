@@ -1,7 +1,4 @@
 //@include edit();
-body {
-  background-color:$grey;
-}
 .container {
   @include uncenter();
   height:100%;
@@ -10,23 +7,47 @@ body {
   position:fixed;
   z-index:1000;
   @include span(1/1);
-  margin-top:3em;
   .navigation {
-    margin-top:1em;
+    @include span(1/1);
+    margin:1em 0;
+    ul {
+      margin: 0 auto;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      li {
+        float:left;
+        margin-right:0.5em;
+      }
+    }
   }
   @include max-screen(nth($res-collection, 3)*1px) {
     position:static;
     z-index:initial;
+    .navigation {
+      @include span(1/1);
+      margin:1em 0;
+      ul {
+        margin: 0 auto;
+        width:100%;
+        text-align:center;
+        li {
+          float:none;
+          margin-right:0;
+        }
+      }
+    }
   }
 }
-.page {
-  @include span(10/12);
+.navigation-panel {
+  height:100%;
 }
-.work {
-  @include span(11/12);
-}
-.page, .work {
-  margin-top:7em;
+.navigation-anchor {
+  display:block;
+  @extend %vertical-align;
+  &-img {
+    @include span(1/1);
+  }
 }
 .filmography, .ethnography {
   &-home {
@@ -40,6 +61,15 @@ body {
     height:100%;
     @include span(1/12);
   }
+}
+.page {
+  @include span(10/12);
+}
+.work {
+  @include span(11/12);
+}
+.page, .work {
+  margin-top:7em;
 }
 footer {
   position:fixed;
