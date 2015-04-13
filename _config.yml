@@ -2,7 +2,7 @@ title: Chlo&eacute; Frommer
 sass:
   sass_dir:  /assets/_sass/
   style: compressed
-baseurl: /
+baseurl: www.chloefrommer.com
 permalink: pretty
 markdown: rdiscount
 gems:  [bourbon]
