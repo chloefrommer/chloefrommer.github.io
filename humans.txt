@@ -3,7 +3,7 @@
 
 # TEAM
 
-    Benjamin D. Kinzer -- Designer & Development -- @benjaminkinzer
+    Benjamin D. Kinzer -- Design & Development -- @benjaminkinzer
 
 # THANKS
 
@@ -16,4 +16,5 @@
     jQuery, Modernizr, Normalize.css
     SASS, Bourbon, Jeet
     Jekyll, Prose
-    GitHub, Photoshop, Illustrator, After Effects
+    GitHub, Photoshop, Illustrator
+    Fonts.com
