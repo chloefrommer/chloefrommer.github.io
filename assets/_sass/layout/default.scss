@@ -4,8 +4,8 @@
   height:100%; 
 }
 .masthead {
-  position:absolute;
-  z-index:1000;
+//  position:absolute;
+//  z-index:1000;
   @include span(1/1);
   .navigation {
     @include span(1/1);
