@@ -18,28 +18,30 @@ title: 'Chlo&eacute; Frommer'
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
     <script src='{{site.baseurl}}/site.js'></script>
 </head>
-<body class="{{page.permalink | remove:'/'}}">
+<body class="{% if page.permalink == base.url %}home{% else %}{{page.permalink | remove:'/'}}{% endif %}">
   <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-    <header class="masthead">
-      <nav class="navigation">
-        <ul>
-          <li><a class='{% if page.permalink == "filmography/" %}active{% endif %}' href='{{site.baseurl}}/filmography'>Filmography</a></li>
-          <li><a class='{% if page.permalink == "about/" %}active{% endif %}' href='{{site.baseurl}}/about'>About</a></li>
-          <li><a class='{% if page.permalink == "news/" %}active{% endif %}' href='{{site.baseurl}}/news'>News</a></li>
-          <li><a class='{% if page.permalink == "ethnography/" %}active{% endif %}' href='{{site.baseurl}}/ethnography'>Ethnography</a></li>
-        </ul>
-      </nav>
-      <div class="logo">
-        <a class='{% if page.section == "home" %}active{% endif %}' href='{{site.baseurl}}/'>
-          <img src="{{site.baseurl}}/assets/img/chloe-frommer.png" width="739" height="82" alt="Chloe Frommer">
-        </a>
-      </div>
-    </header>
-    {{content}}
+    <div class="container">
+      <header class="masthead">
+        <nav class="navigation">
+          <ul>
+            <li><a class='{% if page.permalink == "filmography/" %}active{% endif %}' href='{{site.baseurl}}/filmography'>Filmography</a></li>
+            <li><a class='{% if page.permalink == "about/" %}active{% endif %}' href='{{site.baseurl}}/about'>About</a></li>
+            <li><a class='{% if page.permalink == "news/" %}active{% endif %}' href='{{site.baseurl}}/news'>News</a></li>
+            <li><a class='{% if page.permalink == "ethnography/" %}active{% endif %}' href='{{site.baseurl}}/ethnography'>Ethnography</a></li>
+          </ul>
+        </nav>
+        <div class="logo">
+          <a class='{% if page.section == "home" %}active{% endif %}' href='{{site.baseurl}}/'>
+            <img src="{{site.baseurl}}/assets/img/chloe-frommer.png" width="739" height="82" alt="Chloe Frommer">
+          </a>
+        </div>
+      </header>
+      {{content}}
+    </div>
     <footer>
-      &copy; {{ site.time | date: '%Y' }}
+      <small>&copy; {{ site.time | date: '%Y' }}</small>
     </footer>
 </body>
   <script>

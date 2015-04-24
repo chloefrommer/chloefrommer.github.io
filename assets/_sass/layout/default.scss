@@ -4,8 +4,6 @@
   height:100%; 
 }
 .masthead {
-//  position:absolute;
-//  z-index:1000;
   @include span(1/1);
   .navigation {
     @include span(1/1);
@@ -39,20 +37,13 @@
     }
   }
 }
-.navigation-panel {
-  height:100%;
-  @include max-screen(nth($res-collection, 3)*1px) {
-    height:initial;
-  }
-}
 .navigation-img {
+  margin-top:2.75em;
   @include max-screen(nth($res-collection, 3)*1px) {
     margin-top:1em;
   }
 }
 .navigation-anchor {
-  display:block;
-  @extend %vertical-align;
   @include max-screen(nth($res-collection, 3)*1px) {
     display:inline;
   }
@@ -62,7 +53,6 @@
 }
 .filmography, .ethnography {
   &-home {
-    height:100%;
     @include span(1/2);
     @include max-screen(nth($res-collection, 3)*1px) {
       height:initial;
