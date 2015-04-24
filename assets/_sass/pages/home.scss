@@ -1,0 +1,6 @@
+.home {
+  @include background-image(linear-gradient(90deg, white 50%, $light-grey 50%));
+  @include max-screen(nth($res-collection, 3)*1px) {
+    @include background-image(linear-gradient(90deg, white 50%, white 50%));
+  }
+}

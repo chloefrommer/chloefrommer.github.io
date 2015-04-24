@@ -35,11 +35,8 @@
   }
 }
 .filmography {
-  &-home {
-    background-color:white;
-  }
+  &-home {}
   &-minimized {
-    background-color:$light-grey;
     .button { 
       position:relative;
       top:50%;

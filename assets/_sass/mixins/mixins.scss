@@ -22,6 +22,6 @@
 	list-style-type: none;
 }
 
-@mixin background-image($img-name, $repeat:no-repeat, $x:0px, $y:0px) {
+@mixin background-images($img-name, $repeat:no-repeat, $x:0px, $y:0px) {
   background:url(#{$img-assetpath}#{$img-name}) $repeat $y $x;
 }
