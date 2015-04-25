@@ -1,0 +1,17 @@
+.extra {
+  @include col(3/12);
+  @include shift(-9/12);
+  @include max-screen(nth($res-collection, 3)*1px) {
+    @include col(12/12);
+    @include unshift();
+    margin-bottom:3em;
+  }
+  h4 {
+    color:$peach;
+  }
+  a {
+    display:block;
+    margin-top:1.25em;
+    line-height:1.8em;
+  }
+}
