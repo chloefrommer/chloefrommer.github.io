@@ -3,22 +3,20 @@ layout: default
 section: news
 ---
 {% include filmography-panel.html %}
-<section class="container">
   <section class='page'>
     <div class="content">
       <ul>
-    {% for item in site.categories.news limit:1000 %}
-      {% capture date %}{{ item.date | date: '%Y' }}{% endcapture %}
-      {% capture ndate %}{{ item.next.date | date: '%Y' }}{% endcapture %}
+      {% for item in site.categories.news limit:1000 %}
+        {% capture date %}{{ item.date | date: '%Y' }}{% endcapture %}
+        {% capture ndate %}{{ item.next.date | date: '%Y' }}{% endcapture %}
 
-      {% if date != ndate %}
-      <li class="date-header"><h4 class="date">{{item.date | date: '%Y'}}</h4></li>
-      {% endif %}
-      <li class='item'><span class='date'>{{item.date | date: '%Y'}}</span> <span class='tag'>{{item.tag}}</span> &#126; {{item.content}}</li>
-    {% endfor %}
-    {% include rss-link.html %}
-  </ul>
+        {% if date != ndate %}
+        <li class="date-header"><h4 class="date">{{item.date | date: '%Y'}}</h4></li>
+        {% endif %}
+        <li class='item'><span class='date'>{{item.date | date: '%Y'}}</span> <span class='tag'>{{item.tag}}</span> &#126; {{item.content}}</li>
+      {% endfor %}
+      {% include rss-link.html %}
+      </ul>
     </div>
   </section>
-</section>
 {% include ethnography-panel.html %}

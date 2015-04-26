@@ -1,13 +1,11 @@
 ---
 layout: default
 ---
-<section class="container">
-  {% include filmography-panel.html %}
-  <section class="work">
-    <div class="content">
-      <h2>{{page.title}}</h2>
-      {{content}}
-    </div>
-  </section>
-  {% include ethnography-panel.html %}
+{% include filmography-panel.html %}
+<section class="work">
+  <div class="content">
+    <h2>{{page.title}}</h2>
+    {{content}}
+  </div>
 </section>
+{% include ethnography-panel.html %}
