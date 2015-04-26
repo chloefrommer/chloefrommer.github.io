@@ -8,19 +8,21 @@
 @import 'bourbon/bourbon';
 @import 'jeet/index';
 @import 'help/helpers';
-// BASE
-@import 'base/placeholders';
+// MIXINS
 @import 'mixins/mixins';
+@import 'mixins/placeholders';
+// BASE
 @import 'base/base';
 @import 'base/typography';
 @import 'base/forms';
-// MIXINS
+@import 'base/fonts';
 // LAYOUT
 @import 'layout/default';
 // MODULES
 @import 'modules/page';
 @import 'modules/items';
 @import 'modules/navigation';
+@import 'modules/extra';
 // PAGES
 @import 'pages/home';
 // OH SHIT
