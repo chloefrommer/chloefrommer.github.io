@@ -2,7 +2,7 @@
 
 Professional website of Chloé Frommer
 
-## Requirements
+## Credits
 * [Jekyll](http://jekyllrb.com/)
 * [SASS](http://sass-lang.com)
 * [SASS Media Queries](http://github.com/paranoida/sass-mediaqueries) by Rafal Bromirski
