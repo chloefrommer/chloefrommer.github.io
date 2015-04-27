@@ -1,6 +1,13 @@
 # Chloe Frommer
 
-Professional website of Chloé Frommer
+Professional website of Chloé Frommer, Anthropologist and Filmmaker. chloefrommer.com
+
+## Design
+Design & Development - Benjamin Kinzer (@kungfukoala)
+
+####Fonts
+* Filosofia [Emigre](http://www.emigre.com/)
+* News No 14 [Fonts.com](http://www.fonts.com/font/monotype/news-no-14/regular/web-font)
 
 ## Credits
 * [Jekyll](http://jekyllrb.com/)
@@ -12,3 +19,5 @@ Professional website of Chloé Frommer
 * [Normalize](http://necolas.github.io/normalize.css/)
 * [JQuery](https://jquery.com/)
 * [Modernizer](http://modernizr.com/)
+* [Fontello](http://fontello.com/)
+* [Fonts.com](http://fonts.com/)
