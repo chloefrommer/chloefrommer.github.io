@@ -35,8 +35,11 @@ ul {
 ol {
   @include nobullet;
 }
-li {
+ul li {
   line-height:$base-line-height;
+  ul li {
+    margin-left:$medium-spacing;
+  }
 }
 strong, b { 
   font-weight:800;
@@ -45,7 +48,7 @@ small {
   font-size:$font-small;
   line-height:1em;
 }
-[class^="icon-"]:before, [class*=" icon-"]:before {
+%icons {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
@@ -63,11 +66,18 @@ small {
   -moz-osx-font-smoothing: grayscale;
 }
 .icon-doc-text:before {
+  @extend %icons;
   content: '\e800';
 }
 .icon-linkedin:before {
+  @extend %icons;
   content: '\e801';
 }
 .icon-mail:before {
+  @extend %icons;
   content: '\e802';
+}
+a[href$=".pdf"]:before {
+  @extend %icons;
+  content: '\e800';
 }

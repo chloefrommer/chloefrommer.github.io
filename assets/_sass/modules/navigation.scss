@@ -10,37 +10,3 @@
 .masthead, .filmography-home, .ethnography-home { 
   text-align:center;
 }
-.navigation-panel {
-  p {
-    line-height:$medium-spacing;
-  }
-  .author {
-    margin-bottom:2em;
-  }
-}
-.navigation-anchor {
-  border:none;
-}
-.ethnography {
-  &-home {
-    background-color:$light-grey;
-  }
-  &-minimized {
-    background-color:$light-grey;
-    .button { 
-      position:relative;
-      top:50%;
-      @include transform(rotate(90deg));
-    }
-  }
-}
-.filmography {
-  &-home {}
-  &-minimized {
-    .button { 
-      position:relative;
-      top:50%;
-      @include transform(rotate(90deg));
-    }
-  }
-}
