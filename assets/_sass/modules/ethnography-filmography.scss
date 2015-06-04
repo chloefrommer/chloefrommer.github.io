@@ -1,0 +1,37 @@
+.navigation-panel {
+  p {
+    line-height:$medium-spacing;
+  }
+  .author {
+    margin-bottom:2em;
+  }
+}
+.navigation-anchor {
+  border:none;
+}
+.ethnography {
+  @include background-images("turtles.png", $x:center, $y:110%);
+  background-color:$light-grey;
+  &-home {
+    background-color:$light-grey;
+  }
+  &-minimized {
+    background-color:$light-grey;
+    .button { 
+      position:relative;
+      top:50%;
+      @include transform(rotate(90deg));
+    }
+  }
+}
+.filmography {
+  @include background-images("ringmaster.png", $x:center, $y:100%);
+  &-minimized {
+    background-color:white;
+    .button { 
+      position:relative;
+      top:50%;
+      @include transform(rotate(90deg));
+    }
+  }
+}
