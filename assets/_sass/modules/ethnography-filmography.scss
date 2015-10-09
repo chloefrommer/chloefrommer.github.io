@@ -11,6 +11,9 @@
 }
 .ethnography {
   @include background-images("turtles.png", $x:center, $y:110%);
+  @include max-screen(nth($res-collection, 3)*1px) {
+    background-image:none;
+  }
   background-color:$light-grey;
   &-home {
     background-color:$light-grey;
@@ -26,6 +29,9 @@
 }
 .filmography {
   @include background-images("ringmaster.png", $x:center, $y:100%);
+  @include max-screen(nth($res-collection, 3)*1px) {
+    background-image:none;
+  }
   &-minimized {
     background-color:white;
     .button { 
