@@ -17,7 +17,7 @@ Design & Development - Benjamin Kinzer (@kungfukoala) benjaminkinzer.com
 * [JQuery](https://jquery.com/)
 * [Modernizer](http://modernizr.com/)
 * [Fontello](http://fontello.com/)
-* [Fonts.com](http://fonts.com/)
+* [Typekit.com](http://typekit.com/)
 
 ###Fonts
 * Filosofia [Emigre](http://www.emigre.com/)
