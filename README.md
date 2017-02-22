@@ -17,8 +17,9 @@ Design & Development - Benjamin Kinzer (@kungfukoala) benjaminkinzer.com
 * [JQuery](https://jquery.com/)
 * [Modernizer](http://modernizr.com/)
 * [Fontello](http://fontello.com/)
-* [Typekit.com](http://typekit.com/)
+* [Typekit](http://typekit.com/)
 
 ###Fonts
 * Filosofia [Emigre](http://www.emigre.com/)
-* News No 14 [Fonts.com](http://www.fonts.com/font/monotype/news-no-14/regular/web-font)
+* JAF Lapture [Typekit](https://typekit.com/fonts/jaf-lapture)
+* Alternate Gothic [Typekit](https://typekit.com/fonts/alternate-gothic)
